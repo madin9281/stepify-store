@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>{{ product.title }}</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static',
+    filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+    <h1>👟 Stepify</h1>
+
+</div>
+
+<div style="
+max-width:1200px;
+margin:50px auto;
+display:flex;
+gap:40px;
+flex-wrap:wrap;
+padding:20px;">
+
+    <div style="flex:1;
+    min-width:300px;">
+
+        <img src="{{ url_for('static',
+        filename='images/' + product.image) }}"
+
+        style="
+        width:100%;
+        border-radius:20px;">
+
+    </div>
+
+    <div style="flex:1;
+    min-width:300px;">
+
+        <h1>{{ product.title }}</h1>
+
+        <h2 style="color:#2563eb;
+        margin-top:15px;">
+
+            {{ product.price }}
+
+        <div style="
+margin-top:20px;
+font-size:18px;
+line-height:2;
+color:#444;">
+
+    <p>
+
+        {{ product.description }}
+
+    </p>
+
+    <br>
+
+    <p>
+
+        These shoes are designed for
+        daily comfort, stylish looks
+        and long-lasting durability.
+
+        Perfect for:
+        walking, running, gym,
+        sports and casual wear.
+
+    </p>
+
+    <br>
+
+    <p>
+
+        Made with premium quality
+        material and lightweight sole
+        for maximum comfort.
+
+    </p>
+
+    <br>
+
+    <h3>
+
+        ⭐ Features
+
+    </h3>
+
+    <ul style="
+    margin-left:25px;
+    margin-top:10px;">
+
+        <li>Premium Quality Material</li>
+
+        <li>Comfortable Cushion Sole</li>
+
+        <li>Stylish Modern Design</li>
+
+        <li>Lightweight & Flexible</li>
+
+        <li>Perfect Daily Wear</li>
+
+        <li>Breathable Fabric</li>
+
+        <li>Strong Grip Sole</li>
+
+    </ul>
+
+</div>
+
+        <div style="
+        display:flex;
+        gap:15px;
+        margin-top:30px;">
+
+            <a href="/cart">
+
+                <button class="add-btn">
+                    Add to Cart
+                </button>
+
+            </a>
+
+            <a href="/checkout">
+
+                <button class="buy-btn">
+                    Buy Now
+                </button>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
