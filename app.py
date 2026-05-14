@@ -265,3 +265,4 @@ if __name__ == '__main__':
 def product_home():
 
     return redirect('/')
+
